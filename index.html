@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Myntra Functional Clone</title>
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo_container">
+<a href="index.html">
+<img class="myntra_home" src="images/myntra_logo.webp" alt="Myntra Home">
+</a>
+</div>
+
+<nav class="nav_bar">
+<a href="#" onclick="filterItems('Men')">Men</a>
+<a href="#" onclick="filterItems('Women')">Women</a>
+<a href="#" onclick="filterItems('Kids')">Kids</a>
+<a href="#" onclick="filterItems('Home')">Home & Living</a>
+<a href="#" onclick="filterItems('Beauty')">Beauty</a>
+<a href="#" onclick="showAllItems()">Studio <sup>New</sup></a>
+</nav>
+
+<div class="search_bar">
+<span class="material-symbols-outlined search_icon">search</span>
+
+<input
+class="search_input"
+placeholder="Search for products,brands and more"
+onkeyup="searchItems(this.value)">
+</div>
+
+<div class="action_bar">
+
+<div class="action_container" onclick="openProfile()">
+<span class="material-symbols-outlined action_icon">person</span>
+<span class="action_name">Profile</span>
+</div>
+
+<div class="action_container" onclick="showWishlistItems()">
+<span class="material-symbols-outlined action_icon">favorite</span>
+<span class="action_name">Wishlist</span>
+<span class="wishlist-count">0</span>
+</div>
+
+<a class="action_container" href="pages/bag.html">
+<span class="material-symbols-outlined action_icon">shopping_bag</span>
+<span class="action_name">Bag</span>
+<span class="bag-item-count">0</span>
+</a>
+
+</div>
+
+</header>
+
+<main>
+
+<div class="offer-strip">
+FLAT ₹300 OFF ON FIRST ORDER | FREE SHIPPING ABOVE ₹799
+</div>
+
+<div class="banner">
+<div>
+<h1>Big Fashion Festival</h1>
+<p>Fresh styles,real offers and trending picks</p>
+<button onclick="showAllItems()">Shop Now</button>
+</div>
+</div>
+
+<div class="control-row">
+
+<h2>
+Latest Products
+</h2>
+
+<select onchange="sortItems(this.value)">
+<option value="">Sort By</option>
+<option value="low">Price:Low to High</option>
+<option value="high">Price:High to Low</option>
+<option value="rating">Customer Rating</option>
+</select>
+
+</div>
+
+<div class="items-container"></div>
+
+</main>
+
+<footer>
+
+<div class="footer_container">
+
+<div class="footer_column">
+<h3>ONLINE SHOPPING</h3>
+<a href="#">Men</a>
+<a href="#">Women</a>
+<a href="#">Kids</a>
+<a href="#">Home & Living</a>
+<a href="#">Beauty</a>
+<a href="#">Gift Card</a>
+</div>
+
+<div class="footer_column">
+<h3>CUSTOMER POLICIES</h3>
+<a href="#">Contact Us</a>
+<a href="#">FAQ</a>
+<a href="#">Shipping</a>
+<a href="#">Returns</a>
+<a href="#">Privacy Policy</a>
+</div>
+
+<div class="footer_column">
+<h3>PROJECT INFO</h3>
+<p>Educational Myntra Clone</p>
+<p>Designed by Ankit</p>
+<p>Not affiliated with Myntra</p>
+</div>
+
+</div>
+
+<hr>
+
+<div class="copyright">
+© 2026 Educational Myntra Clone
+</div>
+
+</footer>
+
+<div class="toast"></div>
+
+<div class="profile-modal">
+
+<div class="profile-box">
+
+<span class="profile-close" onclick="closeProfile()">×</span>
+
+<h2>Hi,Emma Wilson</h2>
+
+<p class="profile-sub">
+Welcome to your shopping profile
+</p>
+
+<div class="profile-info">
+
+<p><b>Name:</b> Emma Wilson</p>
+<p><b>Email:</b> emmawilson24@gmail.com</p>
+<p><b>Location:</b> Khagaria,Bihar</p>
+<p><b>Orders:</b> 18 Delivered</p>
+<p><b>Wishlist:</b> 7 Items</p>
+
+</div>
+
+<button onclick="loginDemo()">
+VIEW ORDERS
+</button>
+
+</div>
+
+</div>
+
+<script src="data/items.js"></script>
+<script src="scripts/index.js"></script>
+
+</body>
+</html>

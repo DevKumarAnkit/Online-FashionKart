@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Myntra Bag</title>
+<link rel="stylesheet" href="../css/index.css">
+<link rel="stylesheet" href="../css/bag.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+</head>
+<body>
+<header>
+<div class="logo_container">
+<a href="../index.html"><img class="myntra_home" src="../images/myntra_logo.webp" alt="Myntra Home"></a>
+</div>
+<nav class="nav_bar">
+<a href="../index.html">Men</a>
+<a href="../index.html">Women</a>
+<a href="../index.html">Kids</a>
+<a href="../index.html">Home & Living</a>
+<a href="../index.html">Beauty</a>
+<a href="../index.html">Studio <sup>New</sup></a>
+</nav>
+<div class="search_bar">
+<span class="material-symbols-outlined search_icon">search</span>
+<input class="search_input" placeholder="Search for products, brands and more">
+</div>
+<div class="action_bar">
+<div class="action_container" onclick="openProfile()">
+<span class="material-symbols-outlined action_icon">person</span>
+<span class="action_name">Profile</span>
+</div>
+<div class="action_container" onclick="showWishlistItems()">
+<span class="material-symbols-outlined action_icon">favorite</span>
+<span class="action_name">Wishlist</span>
+<span class="wishlist-count">0</span>
+</div>
+<div class="action_container">
+<span class="material-symbols-outlined action_icon">shopping_bag</span>
+<span class="action_name">Bag</span>
+<span class="bag-item-count">0</span>
+</div>
+</div>
+</header>
+
+<main>
+<div class="bag-page">
+<div class="bag-items-container"></div>
+<div class="bag-summary"></div>
+</div>
+</main>
+
+<footer>
+<div class="footer_container">
+<div class="footer_column">
+<h3>ONLINE SHOPPING</h3>
+<a href="#">Men</a>
+<a href="#">Women</a>
+<a href="#">Kids</a>
+<a href="#">Home & Living</a>
+<a href="#">Beauty</a>
+</div>
+<div class="footer_column">
+<h3>CUSTOMER POLICIES</h3>
+<a href="#">Contact Us</a>
+<a href="#">FAQ</a>
+<a href="#">Returns</a>
+<a href="#">Privacy Policy</a>
+</div>
+<div class="footer_column">
+<h3>PROJECT INFO</h3>
+<p>This is a Myntra clone made only for educational purpose.</p>
+<p>This project is not affiliated with Myntra or any real brand.</p>
+<p>Designed by Ankit</p>
+</div>
+</div>
+<hr>
+<div class="copyright">© 2026 Educational Myntra Clone.All rights reserved for learning purpose only.</div>
+</footer>
+
+<div class="toast"></div>
+<div class="profile-modal">
+<div class="profile-box">
+<span class="profile-close" onclick="closeProfile()">×</span>
+<h2>Hi, Emma Wilson</h2>
+<p class="profile-sub">
+Welcome to your shopping profile
+</p>
+<div class="profile-info">
+<p>
+<b>Name:</b> Emma Wilson
+</p>
+<p>
+<b>Email:</b> emmawilson24@gmail.com
+</p>
+<p>
+<b>Mobile:</b> +91 9876543210
+</p>
+<p>
+<b>Member Type:</b> Insider Premium
+</p>
+<p>
+<b>Location:</b> Khagaria,Bihar
+</p>
+<p>
+<b>Orders:</b> 18 Delivered
+</p>
+<p>
+<b>Wishlist:</b> 7 Items
+</p>
+</div>
+<button onclick="loginDemo()">
+VIEW ORDERS
+</button>
+<small>
+Demo profile for educational clone only
+</small>
+</div>
+</div>
+<script src="../data/items.js"></script>
+<script src="../scripts/index.js"></script>
+<script src="../scripts/bag.js"></script>
+</body>
+</html>
